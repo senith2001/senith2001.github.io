@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;} */
+
+        input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        }
+
+        input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+
+        .container {
+        border-radius: 5px;
+        background-color: rgba(242, 242, 242,0.5);
+        padding: 20px;
+        }
+        header {
+           
+            background-color: rgba(0, 0,0, 0.5);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        .head{
+            background-image: url("images/nav.jpg");
+        }
+        .center{
+            text-align: center;
+            background-image: url("images/middle.jpg");
+
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0,0, 0.5);
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+            
+           
+        }
+        .thumbnail{
+            border: 1px solid #ddd;
+            background-color: rgba(221, 221, 221,0.5);
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+            margin: 10px;
+        }
+        .thumbnail:hover{
+            background-color: rgba(221, 221, 221,0.8);
+        }
+        .thumbnail img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .thumbnail h3 {
+            margin-top: 10px;
+        }
+
+        .thumbnail p {
+            color: #555;
+        }
+        .overview{
+            background-color: rgba(240, 248, 255,0.5);
+            width : 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="head">
+        <header>
+            <h1>Genuine Recipes</h1>
+            
+        </header>
+        
+        <nav>
+            <a href="#section1">Home</a>
+            <a href="#section2">Recipe Catalog </a>
+            <a href="#section3">Contact Us</a>
+        </nav>
+    </div>
+    <div class="center">
+        <section id="section1">
+            
+            <p class="overview">
+               
+                
+                🌟 Welcome to Genuine Recipes! 🌟
+                
+                Embark on a culinary journey with us and explore the art of home cooking! At Genuine Recipes, we believe that every meal is a celebration, and the heart of any home is its kitchen.
+                
+                👩‍🍳 Discover a treasure trove of mouthwatering recipes curated for every occasion and skill level. Whether you're a seasoned chef or a kitchen novice, our collection has something special for everyone.
+                
+                🍲 Dive into a world of flavors, where each recipe is a story waiting to be told. From quick and easy weekday dinners to indulgent weekend treats, we've got your cravings covered.
+                
+                🌐 What sets us apart? Our community! Join fellow food enthusiasts, share your culinary creations, and be inspired by a diverse community of home cooks. Together, let's turn every kitchen into a place of joy and creativity.
+                
+                📌 Start your culinary adventure now! Browse our categories, save your favorite recipes, and let the aroma of delicious possibilities fill your home.
+                
+                Happy cooking!</p>
+                
+        </section>
+    
+        <section id="section2" style="display: flex;">
+            <div class="thumbnail">
+                <img src="images/Chocolate-Crinkle-Cookies-Recipe.jpg" alt="thumbnail image">
+                <h3>Chocolate Crinkles</h3>
+                <p>Chocolate Crinkles are delightful...</p>
+            </div>
+            <div class="thumbnail">
+                 <img src="images/7-layer magic bars.jpeg" alt="">
+                 <h3>7-Layer Magic Bars</h3>
+                 <p>Seven-Layer Magic Bars, also known as Hello Dolly Bars or Magic Cookie Bars, are a delicious ... </p>
+            </div>
+            <div class="thumbnail">
+                <img src="images/peanut butter cookies.jpeg" alt="">
+                <h3>Peanut Butter Cookies</h3>
+                <p>Peanut Butter Cookies are classic treats that are... </p>
+           </div>
+           <div class="thumbnail">
+            <img src="images/gingerbread house.jpg" alt="">
+            <h3>Gingerbread House</h3>
+            <p>Making a gingerbread house can be a delightful and festive holiday activity. Here's a basic recipe for ... </p>
+            </div>
+            <div class="thumbnail">
+                    <img src="images/mexican wedding cookies.jpeg" alt="">
+                    <h3>Mexican Wedding Cookies</h3>
+                    <p>Mexican Wedding Cookies, also known as Russian Tea Cakes or Snowball Cookies, are delicious buttery cookies... </p>
+            </div>
+        </section>
+    
+        <section id="section3">
+            <h2>Contact Us</h2>
+            <div class="container">
+                <form >
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="sri lanka">Sri Lanka</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+        </section>
+    </div>
+  
+
+</body>
+</html>
